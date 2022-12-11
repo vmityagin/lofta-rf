@@ -1,0 +1,9 @@
+.nav__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__hamburger {
+    display: block;
+  }
+}

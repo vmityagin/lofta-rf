@@ -1,0 +1,9 @@
+.card__price {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+
+  margin: 0;
+}

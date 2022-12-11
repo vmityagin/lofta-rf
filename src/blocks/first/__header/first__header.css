@@ -1,0 +1,45 @@
+.first__header {
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 45px;
+
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 1200px) {
+  .first__header {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .first__header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first__header {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .first__header {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+
+    margin: 0 0 15px 0;
+  }
+}

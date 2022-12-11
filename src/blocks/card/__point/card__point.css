@@ -1,0 +1,15 @@
+.card__point {
+  margin: 0 0 4px 0;
+  padding: 0;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+
+  color: grey;
+}
+
+.card__point:last-child {
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+.models__title {
+  margin: 20px 0 30px;
+  padding: 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 550px) {
+  .models__title {
+    margin: 20px 0 20px;
+  }
+}

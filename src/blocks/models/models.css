@@ -1,0 +1,12 @@
+.models {
+  width: 100%;
+
+  margin: 50px 20px;
+  padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .models {
+    margin: 50px 5px;
+  }
+}

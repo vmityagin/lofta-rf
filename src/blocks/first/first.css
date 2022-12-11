@@ -1,0 +1,14 @@
+.first {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 568px) {
+  .first {
+    flex-direction: column;
+    position: relative;
+    height: 528px;
+  }
+}

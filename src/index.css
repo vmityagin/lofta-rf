@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/Montserrat.css');
+@import url('./blocks/page/page.css');
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__navigation/header__navigation.css');
+@import url('./blocks/header/__fl/header__fl.css');
+@import url('./blocks/header/__logo/header__logo.css');
+
+@import url('./blocks/info/info.css');
+@import url('./blocks/info/__item/info__item.css');
+@import url('./blocks/info/__link/info__link.css');
+@import url('./blocks/info/__icon/info__icon.css');
+@import url('./blocks/info/__text/info__text.css');
+
+@import url('./blocks/nav/nav.css');
+@import url('./blocks/nav/__item/nav__item.css');
+@import url('./blocks/nav/__link/nav__link.css');
+@import url('./blocks/nav/__hamburger/nav__hamburger.css');
+
+@import url('./blocks/first/first.css');
+@import url('./blocks/first/__text/first__text.css');
+@import url('./blocks/first/__image/first__image.css');
+@import url('./blocks/first/__header/first__header.css');
+@import url('./blocks/first/__subtitle/first__subtitle.css');
+@import url('./blocks/first/__price/first__price.css');
+
+@import url('./blocks/models/models.css');
+@import url('./blocks/models/__list/models__list.css');
+@import url('./blocks/models/__item/models__item.css');
+@import url('./blocks/models/__subtitle/models__subtitle.css');
+@import url('./blocks/models/__title/models__title.css');
+
+@import url('./blocks/card/card.css');
+@import url('./blocks/card/__elements/card__elements.css');
+@import url('./blocks/card/__photo/card__photo.css');
+@import url('./blocks/card/__options/card__options.css');
+@import url('./blocks/card/__option/card__option.css');
+@import url('./blocks/card/__stroke/card__stroke.css');
+@import url('./blocks/card/__name/card__name.css');
+@import url('./blocks/card/__price/card__price.css');
+@import url('./blocks/card/__sizes/card__sizes.css');
+@import url('./blocks/card/__size/card__size.css');
+@import url('./blocks/card/__point/card__point.css');
+@import url('./blocks/card/__materials/card__materials.css');
+@import url('./blocks/card/__material/card__material.css');
+@import url('./blocks/card/__button/card__button.css');
+@import url('./blocks/card/__delivery/card__delivery.css');
+
+
+.splide {
+  padding: 0 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 768px) {
+  .splide {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .splide {
+    padding: 20px;
+  }
+}
+
+.splide__test{
+  background-color: #76B729 !important;
+}
+
+.splide__pagination__page.is-active {
+  background: #76B729 !important;
+  margin: 5px 10px 0 0 !important;
+}
+
+.splide__pagination {
+  bottom: 0.2em !important;
 }
