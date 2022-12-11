@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lofta-rf/static/css/main.00b2d19b.css",
-    "main.js": "/lofta-rf/static/js/main.5b0f431b.js",
+    "main.js": "/lofta-rf/static/js/main.8bbcb002.js",
     "static/media/first__image.png": "/lofta-rf/static/media/first__image.493f98e32e3c59202402.png",
     "static/media/card__photo.png": "/lofta-rf/static/media/card__photo.2eb273783e5a82818427.png",
     "static/media/Montserrat-BoldItalic.woff": "/lofta-rf/static/media/Montserrat-BoldItalic.bf331673b91821715c08.woff",
@@ -19,7 +19,6 @@
     "static/media/Montserrat-ThinItalic.woff": "/lofta-rf/static/media/Montserrat-ThinItalic.a9e6667078bba966b0ea.woff",
     "static/media/Montserrat-Regular.woff": "/lofta-rf/static/media/Montserrat-Regular.a04b5e24af93da353f0e.woff",
     "static/media/Montserrat-SemiBold.woff": "/lofta-rf/static/media/Montserrat-SemiBold.16e8721ef5837bc6375e.woff",
-    "static/media/header__whatsapp.png": "/lofta-rf/static/media/header__whatsapp.2be0c04d3f2271c419dd.png",
     "static/media/Montserrat-Light.woff": "/lofta-rf/static/media/Montserrat-Light.8749526d8f2dedc12457.woff",
     "static/media/Montserrat-ExtraLight.woff": "/lofta-rf/static/media/Montserrat-ExtraLight.eb5fb69f4f236dfa5051.woff",
     "static/media/Montserrat-Thin.woff": "/lofta-rf/static/media/Montserrat-Thin.860b087ddabb8440b248.woff",
@@ -41,8 +40,6 @@
     "static/media/Montserrat-Light.woff2": "/lofta-rf/static/media/Montserrat-Light.0323e955f74b515cc779.woff2",
     "static/media/Montserrat-ExtraLight.woff2": "/lofta-rf/static/media/Montserrat-ExtraLight.f8bced5ff3fb68517cbf.woff2",
     "static/media/Montserrat-Thin.woff2": "/lofta-rf/static/media/Montserrat-Thin.483aa3e18a5558acdee2.woff2",
-    "static/media/arrow__left.svg": "/lofta-rf/static/media/arrow__left.a2d0c50c5038e0051c6d6a616458efc0.svg",
-    "static/media/arrow__right.svg": "/lofta-rf/static/media/arrow__right.518be529043fad6e0a9bacae935263b2.svg",
     "static/media/card__material.jpg": "/lofta-rf/static/media/card__material.7f78a60cac9477936dd5.jpg",
     "static/media/info__organization.svg": "/lofta-rf/static/media/info__organization.9aefece3fa2d877361970d93b3cdb9d6.svg",
     "static/media/info__clock.svg": "/lofta-rf/static/media/info__clock.f9b16f77619a60db949151cb6cc9989d.svg",
@@ -51,10 +48,10 @@
     "static/media/info__mobile.svg": "/lofta-rf/static/media/info__mobile.5f275420acd7634be2329f2be7b85a58.svg",
     "index.html": "/lofta-rf/index.html",
     "main.00b2d19b.css.map": "/lofta-rf/static/css/main.00b2d19b.css.map",
-    "main.5b0f431b.js.map": "/lofta-rf/static/js/main.5b0f431b.js.map"
+    "main.8bbcb002.js.map": "/lofta-rf/static/js/main.8bbcb002.js.map"
   },
   "entrypoints": [
     "static/css/main.00b2d19b.css",
-    "static/js/main.5b0f431b.js"
+    "static/js/main.8bbcb002.js"
   ]
 }
