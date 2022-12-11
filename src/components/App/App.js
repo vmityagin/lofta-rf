@@ -6,7 +6,7 @@ function App() {
 return (
   <>
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/lofta-rf">
         <Main />
       </Route>
     </Switch>

@@ -1,7 +1,7 @@
 {
+  "homepage": "https://vmityagin.github.io/lofta-rf/",
   "name": "lofta-rf",
   "version": "0.1.0",
-  "homepage": "https://vmityagin.github.io/lofta-rf",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",

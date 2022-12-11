@@ -5,7 +5,6 @@ import info__location from '../images/info__location.svg';
 import info__organization from '../images/info__organization.svg';
 import nav__hamburger from '../images/nav__hamburger.svg';
 
-import header__whatsapp from '../images/header__whatsapp.png';
 import {Link} from 'react-router-dom';
 
 function Header() {
