@@ -70,7 +70,7 @@
 
 .splide__pagination__page.is-active {
   background: #76B729 !important;
-  margin: 5px 10px 0 0 !important;
+  margin: 5px 5px 0 !important;
 }
 
 .splide__pagination {

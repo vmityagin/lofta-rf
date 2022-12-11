@@ -7,7 +7,8 @@
 
 @media screen and (max-width: 550px) {
   .models {
-    margin: 50px 0;
-    padding: 0 5px;
+    margin: 50px 15px;
+    padding: 0;
+    width: calc(100% - 15px);
   }
 }
