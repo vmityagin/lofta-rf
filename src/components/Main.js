@@ -4,7 +4,7 @@ import First from './First';
 import Models from './Models';
 import Footer from './Footer';
 
-function Main({ loggedIn, isOpen }) {
+function Main() {
   return (
     <div className="page">
       <Header />

@@ -1,17 +1,18 @@
 import Model from './Model';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { models } from '../utils/models';
 
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/core';
 
 function Models() {
+
   return (
     <section className="models">
       <p className="models__subtitle">Модельный ряд</p>
       <h2 className="models__title">Тумбы</h2>
       <Splide
         className="splide"
-        hasTrack={ false }
         options={ {
           type: 'slide',
           pagination: false,
@@ -36,15 +37,13 @@ function Models() {
           },
         } }
       >
-        <SplideTrack>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-          <SplideSlide><Model /></SplideSlide>
-        </SplideTrack>
+          {
+            models.map((model) => (
+              <SplideSlide key={model.id}>
+                <Model model={model}/>
+              </SplideSlide >
+            ))
+          }
       </Splide>
     </section>
   );

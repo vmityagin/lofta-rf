@@ -39,16 +39,16 @@ function Header() {
           <nav className="header__nav">
             <ul className="nav">
               <li className="nav__item">
-                <Link className="nav__link">Главная</Link>
+                <Link className="nav__link" to="/#">Главная</Link>
               </li>
               <li className="nav__item">
-                <Link className="nav__link">Модельный ряд</Link>
+                <Link className="nav__link" to="/#">Модельный ряд</Link>
               </li>
               <li className="nav__item">
-                <Link className="nav__link">Калькулятор</Link>
+                <Link className="nav__link" to="/#">Калькулятор</Link>
               </li>
               <li className="nav__item">
-                <Link className="nav__link">Сроки</Link>
+                <Link className="nav__link" to="/#">Сроки</Link>
               </li>
             </ul>
           </nav>
