@@ -52,7 +52,11 @@ function Calc() {
               <p>Тумба</p>
             </div>
             <div className="total__stroke">
-              <p>Скидка</p>
+              <p>Доставка</p>
+              <p>1000Р</p>
+            </div>
+            <div className="total__stroke">
+              <p>Сборка</p>
               <p>1000Р</p>
             </div>
             <div className="total__stroke">
