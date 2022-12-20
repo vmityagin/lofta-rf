@@ -47,6 +47,18 @@
 @import url('./blocks/card/__button/card__button.css');
 @import url('./blocks/card/__delivery/card__delivery.css');
 
+@import url('./blocks/calculate/calculate.css');
+@import url('./blocks/calculate/__header/calculate__header.css');
+@import url('./blocks/calculate/__box/calculate__box.css');
+@import url('./blocks/calculate/__fields/calculate__fields.css');
+@import url('./blocks/calculate/__results/calculate__result.css');
+@import url('./blocks/calculate/__type/calculate__type.css');
+
+@import url('./blocks/item/item.css');
+@import url('./blocks/item/__image/item__image.css');
+@import url('./blocks/item/__signed/item__signed.css');
+
+@import url('./blocks/total/__stroke/total__stroke.css');
 
 .splide {
   padding: 0 60px;

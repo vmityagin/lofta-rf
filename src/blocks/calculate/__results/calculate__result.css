@@ -1,0 +1,19 @@
+.calculate__result {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .calculate__result {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+}

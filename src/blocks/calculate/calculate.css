@@ -1,0 +1,14 @@
+.calculate {
+  width: 100%;
+
+  margin: 50px 20px;
+  padding: 0;
+}
+
+@media screen and (max-width: 551px) {
+  .calculate {
+    margin: 50px 5px;
+    padding: 0;
+    width: calc(100% - 16px);
+  }
+}

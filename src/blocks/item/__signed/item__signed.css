@@ -1,0 +1,18 @@
+.item__signed {
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 550px) {
+  .item__signed {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

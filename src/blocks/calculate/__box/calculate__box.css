@@ -1,0 +1,13 @@
+.calculate__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .calculate__box {
+    flex-direction: column;
+    width: 100%;
+  }
+}

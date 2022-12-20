@@ -1,0 +1,30 @@
+.calculate__header {
+  margin: 20px 0 30px;
+  padding: 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+
+  letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 550px) {
+  .calculate__header {
+    margin: 20px 0 20px;
+    font-size: 39px;
+    line-height: 45px;
+
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .calculate__header {
+    margin: 20px 0 20px;
+    font-size: 33px;
+    line-height: 36px;
+  }
+}

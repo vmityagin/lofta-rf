@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import First from './First';
 import Models from './Models';
+import Calc from './Calc';
 import Footer from './Footer';
 
 function Main() {
@@ -11,10 +12,11 @@ function Main() {
       <main>
         <First />
         <Models />
+        <Calc />
       </main>
       <Footer />
     </div>
   );
-  }
+}
 
-  export default Main;
+export default Main;
