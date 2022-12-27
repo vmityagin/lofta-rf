@@ -35,7 +35,7 @@ function Model({ model }) {
             <div className="card__stroke">
               {
                 model.body.map((type) => (
-                  <div className="card__materials">
+                  <div className="card__materials" key={type.id}>
                     <img className="card__material" src={type.url} alt="порода дерева"/>
                     <p className="card__point">{type.name}</p>
                   </div>
@@ -48,7 +48,7 @@ function Model({ model }) {
             <div className="card__stroke">
               {
                 model.table.map((type) => (
-                  <div className="card__materials">
+                  <div className="card__materials" key={type.id}>
                     <img className="card__material" src={type.url} alt="порода дерева"/>
                     <p className="card__point">{type.name}</p>
                   </div>

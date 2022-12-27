@@ -1,6 +1,6 @@
-import image__napol from '../images/image__napol.jpg';
-import image__podves from '../images/image__podves.jpg';
-import image__forma_s from '../images/image__forma_s.jpg';
+import Type from './components/Type';
+import MaterialTable from './components/MaterialTable';
+import MaterialTumba from './components/MaterialTumba';
 
 function Calc() {
   return (
@@ -8,20 +8,9 @@ function Calc() {
       <h2 className="calculate__header">Расчёт стоимости изделия на заказ</h2>
       <div className="calculate__box">
         <div className="calculate__fields">
-          <div className="calculate__type">
-            <div className="calculate__item item">
-              <img className="item__image" alt="Изображение" src={image__napol} />
-              <p className="item__signed">Напольная</p>
-            </div>
-            <div className="calculate__item item">
-              <img className="item__image" alt="Изображение" src={image__podves} />
-              <p className="item__signed">Подвесная</p>
-            </div>
-            <div className="calculate__item item">
-              <img className="item__image" alt="Изображение" src={image__forma_s} />
-              <p className="item__signed">Напольная с S-столешницей</p>
-            </div>
-          </div>
+          <Type />
+          <MaterialTable />
+          <MaterialTumba />
           <div className="calculate__tabletop">
 
           </div>

@@ -40,7 +40,7 @@ function Models() {
           {
             models.map((model) => (
               <SplideSlide key={model.id}>
-                <Model model={model}/>
+                <Model model={model} />
               </SplideSlide >
             ))
           }

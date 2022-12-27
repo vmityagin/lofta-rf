@@ -1,0 +1,4 @@
+.item_active {
+  border: 4px solid darkslategrey;
+  box-shadow: 0 10px 7px lightgray;
+}
