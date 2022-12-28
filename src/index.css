@@ -53,6 +53,7 @@
 @import url('./blocks/calculate/__fields/calculate__fields.css');
 @import url('./blocks/calculate/__results/calculate__result.css');
 @import url('./blocks/calculate/__type/calculate__type.css');
+@import url('./blocks/calculate/__text/calculate__text.css');
 
 @import url('./blocks/item/item.css');
 @import url('./blocks/item/_active/item_active.css');
@@ -60,6 +61,9 @@
 @import url('./blocks/item/__signed/item__signed.css');
 
 @import url('./blocks/total/__stroke/total__stroke.css');
+
+@import url('./blocks/number/number.css');
+@import url('./blocks/number/__input/number__input.css');
 
 .splide {
   padding: 0 60px;

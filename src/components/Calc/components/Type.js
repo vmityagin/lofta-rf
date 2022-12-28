@@ -10,19 +10,16 @@ function Type() {
   
 
   return (
-    <>
-      <p>1. Выберите тип тумбы</p>
-      <div className="calculate__type">
-        {
-          models.map((item) => (
-            <div key={item.id} className={`calculate__item item ${item.id === isSelected ? 'item_active' : ''}`} onClick={() => chooseType(item.id)}>
-              <img className="item__image" alt={item.name} src={item.icon} />
-              <p className="item__signed">{item.name}</p>
-          </div>
-          ))
-        }
-      </div>
-    </>
+    <div className="calculate__type">
+      {
+        models.map((item) => (
+          <div key={item.id} className={`calculate__item item ${item.id === isSelected ? 'item_active' : ''}`} onClick={() => chooseType(item.id)}>
+            <img className="item__image" alt={item.name} src={item.icon} />
+            <p className="item__signed">{item.name}</p>
+        </div>
+        ))
+      }
+    </div>
   );
 }
 

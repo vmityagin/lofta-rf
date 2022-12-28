@@ -9,19 +9,16 @@ function MaterialTumba() {
   }
   
   return (
-    <>
-      <p>3. Выберите материал тумбы</p>
-      <div className="calculate__type">
-        {
-          materials_tumba.map((item) => (
-            <div key={item.id} className={`calculate__item item ${item.id === isSelected ? 'item_active' : ''}`} onClick={() => chooseType(item.id)}>
-              <img className="item__image" alt={item.wood} src={item.url} />
-              <p className="item__signed">{item.wood}</p>
-            </div>
-          ))
-        }
-      </div>
-    </>
+    <div className="calculate__type">
+      {
+        materials_tumba.map((item) => (
+          <div key={item.id} className={`calculate__item item ${item.id === isSelected ? 'item_active' : ''}`} onClick={() => chooseType(item.id)}>
+            <img className="item__image" alt={item.wood} src={item.url} />
+            <p className="item__signed">{item.wood}</p>
+          </div>
+        ))
+      }
+    </div>
   );
 }
 

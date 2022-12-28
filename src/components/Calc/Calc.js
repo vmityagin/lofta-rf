@@ -1,6 +1,7 @@
 import Type from './components/Type';
 import MaterialTable from './components/MaterialTable';
 import MaterialTumba from './components/MaterialTumba';
+import Input from './components/Input';
 
 function Calc() {
   return (
@@ -8,15 +9,16 @@ function Calc() {
       <h2 className="calculate__header">Расчёт стоимости изделия на заказ</h2>
       <div className="calculate__box">
         <div className="calculate__fields">
+          <p className="calculate__text">1. Выберите длину ниши, м</p>
           <Type />
+          <p className="calculate__text">2. Выберите длину ниши, м</p>
           <MaterialTable />
+          <p className="calculate__text">3. Выберите длину ниши, м</p>
           <MaterialTumba />
-          <div className="calculate__tabletop">
-
-          </div>
-          <div className="calculate__cabinet">
-
-          </div>
+          <p className="calculate__text">4. Выберите длину ниши, м</p>
+          <Input
+            type={'width'}
+          />
           <div className="calculate__width">
 
           </div>

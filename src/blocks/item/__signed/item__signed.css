@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 550px) {
   .item__signed {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 11px;
   }
 }

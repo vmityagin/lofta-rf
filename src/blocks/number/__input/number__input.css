@@ -1,0 +1,12 @@
+.number__input {
+  width: 95%;
+  height: 50px;
+
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+}
