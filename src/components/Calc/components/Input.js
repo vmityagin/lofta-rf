@@ -95,7 +95,7 @@ function Input({placeHolder, max, min, label, typeInput, options, setOptions}) {
       hideLabel();
     }
     console.log(typeInput);
-    setOptions({...options, [typeInput]: valueInput.userValue});
+    setOptions({...options, [typeInput]: Number(valueInput.userValue)});
   }, [valueInput.userValue])
   
   return (
