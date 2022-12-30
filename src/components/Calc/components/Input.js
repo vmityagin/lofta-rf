@@ -89,8 +89,10 @@ function Input() {
   React.useEffect(() => {
     if(valueInput.userValue === 50) {
       setDisabledMinus(true);
+      hideLabel();
     } else if (valueInput.userValue === 300) {
       setDisabledPlus(true);
+      hideLabel();
     }
   }, [valueInput.userValue])
   
