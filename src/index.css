@@ -64,6 +64,9 @@
 
 @import url('./blocks/number/number.css');
 @import url('./blocks/number/__input/number__input.css');
+@import url('./blocks/number/__button/number__button.css');
+@import url('./blocks/number/__button/_disabled/number__button_disabled.css');
+@import url('./blocks/number/__label/number__label.css');
 
 .splide {
   padding: 0 60px;
