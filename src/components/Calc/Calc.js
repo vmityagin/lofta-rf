@@ -13,18 +13,25 @@ function Calc() {
     width: 0,
   });
 
-  console.log(options);
-
   const [totalPrice, setTotalPrice] = React.useState(0);
 
   function calculation() {
     const estimate = options.width/100*options.length/100*options.tableTop+((options.length/100-0.65)+1.72)*(options.width/100-0.02)*options.tumba;
-    console.log(Math.ceil(estimate));
     return Math.ceil(estimate);
   }
 
+  function checkValuesCalculating(element) {
+    console.log(element);
+    return element > 0;
+  }
+
   React.useEffect(()=> {
-    setTotalPrice(calculation());
+    console.log(Object.values(options));
+    const booleanStatus = Object.values(options).every(checkValuesCalculating);
+    console.log(booleanStatus);
+    if(booleanStatus) {
+      setTotalPrice(calculation());
+    }
   }, [options]);
 
   return (
