@@ -54,13 +54,18 @@
 @import url('./blocks/calculate/__results/calculate__result.css');
 @import url('./blocks/calculate/__type/calculate__type.css');
 @import url('./blocks/calculate/__text/calculate__text.css');
+@import url('./blocks/calculate/__button/calculate__button.css');
 
 @import url('./blocks/item/item.css');
 @import url('./blocks/item/_active/item_active.css');
 @import url('./blocks/item/__image/item__image.css');
 @import url('./blocks/item/__signed/item__signed.css');
 
+@import url('./blocks/total/__final/total__final.css');
 @import url('./blocks/total/__stroke/total__stroke.css');
+@import url('./blocks/total/__summary/total__summary.css');
+@import url('./blocks/total/__finprice/total__finprice.css');
+@import url('./blocks/total/__options/total__options.css');
 
 @import url('./blocks/number/number.css');
 @import url('./blocks/number/__input/number__input.css');

@@ -1,11 +1,13 @@
 import React from 'react';
 import { materials_tumba } from '../../../utils/models';
 
-function MaterialTumba() {
+function MaterialTumba({options, setOptions}) {
   const [isSelected, setIsSelected] = React.useState(0);
 
   function chooseType(type) {
     setIsSelected(type);
+    const choosenMaterial = materials_tumba.find((i) => i.id === type);
+    setOptions({...options, tumba: choosenMaterial.price});
   }
   
   return (

@@ -1,11 +1,15 @@
 .calculate__result {
   width: 40%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   margin: 0 15px 0 0;
   padding: 0;
+
+  position: sticky;
+  top: 50px;
 }
 
 
@@ -13,7 +17,11 @@
   .calculate__result {
     width: 100%;
 
+    flex-direction: column-reverse;
+
     margin: 0;
     padding: 0;
+
+    position: fixed;
   }
 }

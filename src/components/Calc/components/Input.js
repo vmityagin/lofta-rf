@@ -2,7 +2,7 @@ import React from 'react';
 import button__plus from '../../../images/button_plus.png'; 
 import button__minus from '../../../images/button_minus.png'; 
 
-function Input() {
+function Input({placeHolder, max, min, label, typeInput, options, setOptions}) {
 
   const [valueInput, setValueInput] = React.useState({
     userValue: "",
@@ -29,7 +29,7 @@ function Input() {
 
   function onChange(e) {
     setValueInput({...valueInput, [e.target.name]: e.target.value });
-    if (e.target.value > 50 || e.target.value < 300) {
+    if (e.target.value > min || e.target.value < max) {
       hideLabel();
       setDisabledMinus(false);
       setDisabledPlus(false);
@@ -37,63 +37,65 @@ function Input() {
 
     if(Number(e.target.value) < 0) {
       setValueInput({...valueInput, userValue: ''});
-      showErrorLabel('Введите число от 50 до 300');
-    } else if(Number(e.target.value) === 50) {
+      showErrorLabel(`Введите число от ${min} до ${max}`);
+    } else if(Number(e.target.value) === min) {
       setDisabledMinus(true);
-    } else if(Number(e.target.value) === 300) {
+    } else if(Number(e.target.value) === max) {
       setDisabledPlus(true);
-    } else if(Number(e.target.value) < 50) {
-      showErrorLabel('Длина не может быть меньше 50');
+    } else if(Number(e.target.value) < min) {
+      showErrorLabel(`Длина не может быть меньше ${min}`);
       setDisabledMinus(true);
-    } else if(Number(e.target.value) > 300) {
-      setValueInput({...valueInput, userValue: 300});
-      showErrorLabel('Длина не может быть больше 300');
+    } else if(Number(e.target.value) > max) {
+      setValueInput({...valueInput, userValue: max});
+      showErrorLabel(`Длина не может быть больше ${max}`);
       setDisabledPlus(true);
     }
   }
   
   function onClickPlus(e) {
-    if(valueInput.userValue === '' || Number(valueInput.userValue) < 50) {
-      setValueInput({...valueInput, userValue: 50});
+    if(valueInput.userValue === '' || Number(valueInput.userValue) < min) {
+      setValueInput({...valueInput, userValue: min});
       setDisabledMinus(true);
       setDisabledPlus(false);
-    } else if(Number(valueInput.userValue) < 300) {
+    } else if(Number(valueInput.userValue) < max) {
       const thisNumber = Number(valueInput.userValue) + 1;
       setDisabledMinus(false);
       setDisabledPlus(false);
       setValueInput({...valueInput, userValue: thisNumber});
       hideLabel();
     } else {
-      showErrorLabel('Длина не может быть больше 300');
+      showErrorLabel(`Длина не может быть больше ${max}`);
       setDisabledPlus(true);
     }
   }
 
   function onClickMinus(e) {
     if(valueInput.userValue === '') {
-      setValueInput({...valueInput, userValue: 50});
+      setValueInput({...valueInput, userValue: min});
       setDisabledMinus(true);
       setDisabledPlus(false);
-    } else if(Number(valueInput.userValue) > 50) {
+    } else if(Number(valueInput.userValue) > min) {
       const thisNumber = Number(valueInput.userValue) - 1;
       setValueInput({...valueInput, userValue: thisNumber});
       hideLabel();
       setDisabledMinus(false);
       setDisabledPlus(false);
     } else {
-      showErrorLabel('Длина не может быть меньше 50');
+      showErrorLabel(`Длина не может быть меньше ${min}`);
       setDisabledMinus(true);
     }
   }
 
   React.useEffect(() => {
-    if(valueInput.userValue === 50) {
+    if(valueInput.userValue === min) {
       setDisabledMinus(true);
       hideLabel();
-    } else if (valueInput.userValue === 300) {
+    } else if (valueInput.userValue === max) {
       setDisabledPlus(true);
       hideLabel();
     }
+    console.log(typeInput);
+    setOptions({...options, [typeInput]: valueInput.userValue});
   }, [valueInput.userValue])
   
   return (
@@ -108,15 +110,12 @@ function Input() {
         <input 
           className="number__input" 
           type="number" 
-          max={300} 
-          min={50} 
-          step={1} 
-          placeholder="Введите длину в см от 50 до 300"
+          placeholder={placeHolder}
           focused={focused.toString()}
           onBlur={handleFocus}
           onChange={onChange} 
           name="userValue"
-          label="Ширина"
+          label={label}
           value={valueInput.userValue}
         >
         </input>

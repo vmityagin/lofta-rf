@@ -10,18 +10,42 @@ const bereza = {
   id: 100,
   wood: 'берёза',
   url: card__material,
+  price: 27300,
 };
 
 const sosna = {
   id: 101,
   wood: 'сосна',
   url: card__material,
+  price: 20250,
 };
 
 const dub = {
   id: 102,
-  wood: 'дуб',
+  wood: 'карагач',
   url: card__material,
+  price: 41500,
+};
+
+const ldsp = {
+  id: 103,
+  wood: 'Влагостойкий ЛДСП',
+  url: card__material,
+  price: 8820,
+};
+
+const mdf = {
+  id: 104,
+  wood: 'МДФ в эмали',
+  url: card__material,
+  price: 12350,
+};
+
+const derevo = {
+  id: 105,
+  wood: 'Дерево',
+  url: card__material,
+  price: 41500,
 };
 
 export const materials_table = [
@@ -31,9 +55,9 @@ export const materials_table = [
 ]
 
 export const materials_tumba = [
-  bereza,
-  sosna,
-  dub,
+  ldsp,
+  mdf,
+  derevo,
 ]
 
 export const models = [

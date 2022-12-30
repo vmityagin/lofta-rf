@@ -1,0 +1,19 @@
+.calculate__button {
+  width: 100%;
+  max-width: 400px;
+  
+  padding: 18px;
+  margin: 0;
+
+  background-color: #76B729;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+  color: white;
+}
