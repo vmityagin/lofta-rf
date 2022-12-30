@@ -28,12 +28,6 @@ function Input() {
   }
 
   function onChange(e) {
-    if (e.target.value === 50) {
-      setDisabledMinus(true); 
-    } else if (e.target.value === 300) {
-      setDisabledPlus(true);
-    }
-
     setValueInput({...valueInput, [e.target.name]: e.target.value });
     if (e.target.value > 50 || e.target.value < 300) {
       hideLabel();
@@ -44,6 +38,10 @@ function Input() {
     if(Number(e.target.value) < 0) {
       setValueInput({...valueInput, userValue: ''});
       showErrorLabel('Введите число от 50 до 300');
+    } else if(Number(e.target.value) === 50) {
+      setDisabledMinus(true);
+    } else if(Number(e.target.value) === 300) {
+      setDisabledPlus(true);
     } else if(Number(e.target.value) < 50) {
       showErrorLabel('Длина не может быть меньше 50');
       setDisabledMinus(true);
@@ -61,9 +59,10 @@ function Input() {
       setDisabledPlus(false);
     } else if(Number(valueInput.userValue) < 300) {
       const thisNumber = Number(valueInput.userValue) + 1;
+      setDisabledMinus(false);
+      setDisabledPlus(false);
       setValueInput({...valueInput, userValue: thisNumber});
       hideLabel();
-      setDisabledMinus(false);
     } else {
       showErrorLabel('Длина не может быть больше 300');
       setDisabledPlus(true);
@@ -79,11 +78,21 @@ function Input() {
       const thisNumber = Number(valueInput.userValue) - 1;
       setValueInput({...valueInput, userValue: thisNumber});
       hideLabel();
+      setDisabledMinus(false);
+      setDisabledPlus(false);
     } else {
       showErrorLabel('Длина не может быть меньше 50');
       setDisabledMinus(true);
     }
   }
+
+  React.useEffect(() => {
+    if(valueInput.userValue === 50) {
+      setDisabledMinus(true);
+    } else if (valueInput.userValue === 300) {
+      setDisabledPlus(true);
+    }
+  }, [valueInput.userValue])
   
   return (
     <>

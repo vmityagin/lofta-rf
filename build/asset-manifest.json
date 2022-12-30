@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lofta-rf/static/css/main.699d160c.css",
-    "main.js": "/lofta-rf/static/js/main.788ebeab.js",
+    "main.css": "/lofta-rf/static/css/main.73d65caa.css",
+    "main.js": "/lofta-rf/static/js/main.02001c64.js",
     "static/media/first__image.png": "/lofta-rf/static/media/first__image.493f98e32e3c59202402.png",
     "static/media/image__podves.jpg": "/lofta-rf/static/media/image__podves.95040404a327c545b535.jpg",
     "static/media/image__forma_s.jpg": "/lofta-rf/static/media/image__forma_s.7ccc469e1773f89efa56.jpg",
@@ -43,6 +43,8 @@
     "static/media/Montserrat-Light.woff2": "/lofta-rf/static/media/Montserrat-Light.0323e955f74b515cc779.woff2",
     "static/media/Montserrat-ExtraLight.woff2": "/lofta-rf/static/media/Montserrat-ExtraLight.f8bced5ff3fb68517cbf.woff2",
     "static/media/Montserrat-Thin.woff2": "/lofta-rf/static/media/Montserrat-Thin.483aa3e18a5558acdee2.woff2",
+    "static/media/button_plus.png": "/lofta-rf/static/media/button_plus.d816611c6978b3476678.png",
+    "static/media/button_minus.png": "/lofta-rf/static/media/button_minus.e5940296dbd57c89fa3e.png",
     "static/media/image__napol.jpg": "/lofta-rf/static/media/image__napol.3285069fa408ff521a9c.jpg",
     "static/media/card__photo_podves.jpg": "/lofta-rf/static/media/card__photo_podves.a9c0d322774c849ff465.jpg",
     "static/media/card__material.jpg": "/lofta-rf/static/media/card__material.7f78a60cac9477936dd5.jpg",
@@ -52,11 +54,11 @@
     "static/media/nav__hamburger.svg": "/lofta-rf/static/media/nav__hamburger.bf88c47851cf38fd60bc78326ea45706.svg",
     "static/media/info__mobile.svg": "/lofta-rf/static/media/info__mobile.5f275420acd7634be2329f2be7b85a58.svg",
     "index.html": "/lofta-rf/index.html",
-    "main.699d160c.css.map": "/lofta-rf/static/css/main.699d160c.css.map",
-    "main.788ebeab.js.map": "/lofta-rf/static/js/main.788ebeab.js.map"
+    "main.73d65caa.css.map": "/lofta-rf/static/css/main.73d65caa.css.map",
+    "main.02001c64.js.map": "/lofta-rf/static/js/main.02001c64.js.map"
   },
   "entrypoints": [
-    "static/css/main.699d160c.css",
-    "static/js/main.788ebeab.js"
+    "static/css/main.73d65caa.css",
+    "static/js/main.02001c64.js"
   ]
 }

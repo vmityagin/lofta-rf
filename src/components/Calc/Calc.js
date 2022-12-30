@@ -9,13 +9,13 @@ function Calc() {
       <h2 className="calculate__header">Расчёт стоимости изделия на заказ</h2>
       <div className="calculate__box">
         <div className="calculate__fields">
-          <p className="calculate__text">1. Выберите длину ниши, м</p>
+          <p className="calculate__text">1. Выберите форму тумбы</p>
           <Type />
-          <p className="calculate__text">2. Выберите длину ниши, м</p>
+          <p className="calculate__text">2. Выберите материал столешницы</p>
           <MaterialTable />
-          <p className="calculate__text">3. Выберите длину ниши, м</p>
+          <p className="calculate__text">3. Выберите материал тумбы</p>
           <MaterialTumba />
-          <p className="calculate__text">4. Выберите длину ниши, м</p>
+          <p className="calculate__text">4. Выберите длину ниши, cм</p>
           <Input
             type={'width'}
           />
