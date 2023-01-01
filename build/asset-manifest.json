@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lofta-rf/static/css/main.91cfe522.css",
-    "main.js": "/lofta-rf/static/js/main.3ca1c3f6.js",
+    "main.css": "/lofta-rf/static/css/main.e64e12c3.css",
+    "main.js": "/lofta-rf/static/js/main.92c3daca.js",
     "static/media/first__image.png": "/lofta-rf/static/media/first__image.493f98e32e3c59202402.png",
     "static/media/card__material__ldsp.png": "/lofta-rf/static/media/card__material__ldsp.a19c06a0b32b55f43e97.png",
     "static/media/card__material_derevo.png": "/lofta-rf/static/media/card__material_derevo.9ed56524577d44da2da4.png",
@@ -47,11 +47,16 @@
     "static/media/Montserrat-ExtraLight.woff2": "/lofta-rf/static/media/Montserrat-ExtraLight.f8bced5ff3fb68517cbf.woff2",
     "static/media/Montserrat-Thin.woff2": "/lofta-rf/static/media/Montserrat-Thin.483aa3e18a5558acdee2.woff2",
     "static/media/card__material_karagach.jpg": "/lofta-rf/static/media/card__material_karagach.437aa17091559480d1b6.jpg",
+    "static/media/icon__delivery.svg": "/lofta-rf/static/media/icon__delivery.cfe5e898d93fc3a6851db5064814974b.svg",
+    "static/media/icon__callcenter.svg": "/lofta-rf/static/media/icon__callcenter.df072bf5089c843dbb0026eab2f2dbbe.svg",
     "static/media/button_plus.png": "/lofta-rf/static/media/button_plus.d816611c6978b3476678.png",
     "static/media/button_minus.png": "/lofta-rf/static/media/button_minus.e5940296dbd57c89fa3e.png",
     "static/media/image__napol.jpg": "/lofta-rf/static/media/image__napol.3285069fa408ff521a9c.jpg",
+    "static/media/icon__package.svg": "/lofta-rf/static/media/icon__package.ad647b2f629eb03e688e97f9550738be.svg",
+    "static/media/icon__dogovor.svg": "/lofta-rf/static/media/icon__dogovor.fba062b2307a2ed04cc2d1dfa3400a6f.svg",
     "static/media/card__photo_podves.jpg": "/lofta-rf/static/media/card__photo_podves.a9c0d322774c849ff465.jpg",
     "static/media/card__material_bereza.jpg": "/lofta-rf/static/media/card__material_bereza.f41badf4e8dfb3b97077.jpg",
+    "static/media/icon__site.svg": "/lofta-rf/static/media/icon__site.81d89329fe5795f8fc56c30432c1ae8b.svg",
     "static/media/card__material.jpg": "/lofta-rf/static/media/card__material.7f78a60cac9477936dd5.jpg",
     "static/media/card__material_sosna.jpg": "/lofta-rf/static/media/card__material_sosna.7f78a60cac9477936dd5.jpg",
     "static/media/info__organization.svg": "/lofta-rf/static/media/info__organization.9aefece3fa2d877361970d93b3cdb9d6.svg",
@@ -60,11 +65,11 @@
     "static/media/nav__hamburger.svg": "/lofta-rf/static/media/nav__hamburger.bf88c47851cf38fd60bc78326ea45706.svg",
     "static/media/info__mobile.svg": "/lofta-rf/static/media/info__mobile.5f275420acd7634be2329f2be7b85a58.svg",
     "index.html": "/lofta-rf/index.html",
-    "main.91cfe522.css.map": "/lofta-rf/static/css/main.91cfe522.css.map",
-    "main.3ca1c3f6.js.map": "/lofta-rf/static/js/main.3ca1c3f6.js.map"
+    "main.e64e12c3.css.map": "/lofta-rf/static/css/main.e64e12c3.css.map",
+    "main.92c3daca.js.map": "/lofta-rf/static/js/main.92c3daca.js.map"
   },
   "entrypoints": [
-    "static/css/main.91cfe522.css",
-    "static/js/main.3ca1c3f6.js"
+    "static/css/main.e64e12c3.css",
+    "static/js/main.92c3daca.js"
   ]
 }
