@@ -1,4 +1,9 @@
-import card__material from '../images/card__material.jpg';
+import card__material_sosna from '../images/card__material_sosna.jpg';
+import card__material_bereza from '../images/card__material_bereza.jpg';
+import card__material_karagach from '../images/card__material_karagach.jpg';
+import card__material__ldsp from '../images/card__material__ldsp.png';
+import card__material__mdf from '../images/card__material__mdf.png';
+import card__material_derevo from '../images/card__material_derevo.png';
 import tumba__napol from '../images/card__photo.png';
 import tumba__podves from '../images/card__photo_podves.jpg';
 import tumba__gobraz from '../images/card__photo_gobraz.jpg';
@@ -9,48 +14,48 @@ import image__forma_s from '../images/image__forma_s.jpg';
 const bereza = {
   id: 100,
   wood: 'берёза',
-  url: card__material,
+  url: card__material_bereza,
   price: 27300,
 };
 
 const sosna = {
   id: 101,
   wood: 'сосна',
-  url: card__material,
+  url: card__material_sosna,
   price: 20250,
 };
 
 const dub = {
   id: 102,
   wood: 'карагач',
-  url: card__material,
+  url: card__material_karagach,
   price: 41500,
 };
 
 const ldsp = {
   id: 103,
   wood: 'Влагостойкий ЛДСП',
-  url: card__material,
+  url: card__material__ldsp,
   price: 8820,
 };
 
 const mdf = {
   id: 104,
   wood: 'МДФ в эмали',
-  url: card__material,
+  url: card__material__mdf,
   price: 12350,
 };
 
 const derevo = {
   id: 105,
   wood: 'Дерево',
-  url: card__material,
+  url: card__material_derevo,
   price: 41500,
 };
 
 export const materials_table = [
-  bereza,
   sosna,
+  bereza,
   dub,
 ]
 
@@ -68,19 +73,19 @@ export const models = [
     icon: image__napol,
     price: '12 990',
     sizes : {
-      width: 100,
+      width: 50,
       height: 50,
-      depth: 40,
+      depth: 30,
     },
     body: [
-      bereza,
       sosna,
+      bereza,
       dub,
     ],
     table: [
-      bereza,
-      sosna,
-      dub,
+      ldsp,
+      mdf,
+      derevo,
     ],
     delivery: 'Доставка 7 дней',
   },

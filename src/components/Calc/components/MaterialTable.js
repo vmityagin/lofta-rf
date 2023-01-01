@@ -2,7 +2,7 @@ import React from 'react';
 import { materials_table } from '../../../utils/models';
 
 function MaterialTable({options, setOptions}) {
-  const [isSelected, setIsSelected] = React.useState(0);
+  const [isSelected, setIsSelected] = React.useState(materials_table[0].id);
 
   function chooseType(type) {
     setIsSelected(type);

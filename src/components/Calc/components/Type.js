@@ -2,7 +2,7 @@ import React from 'react';
 import { models } from '../../../utils/models';
 
 function Type({options, setOptions}) {
-  const [isSelected, setIsSelected] = React.useState(0);
+  const [isSelected, setIsSelected] = React.useState(models[0].id);
 
   function chooseType(type) {
     setIsSelected(type);

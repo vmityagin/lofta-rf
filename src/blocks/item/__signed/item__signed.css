@@ -14,5 +14,7 @@
   .item__signed {
     font-size: 10px;
     line-height: 11px;
+
+    margin: 10px 5px;
   }
 }

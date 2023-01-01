@@ -3,14 +3,15 @@ import MaterialTable from './components/MaterialTable';
 import MaterialTumba from './components/MaterialTumba';
 import Input from './components/Input';
 import React from 'react';
+import { models } from '../../utils/models';
 
 function Calc() {
   const [options, setOptions] = React.useState({
-    typeModel: '',
-    tumba: 0,
-    tableTop: 0,
-    length: 0,
-    width: 0,
+    typeModel: models[0].id,
+    tumba: models[0].table[0].price,
+    tableTop: models[0].body[0].price,
+    length: models[0].sizes.width,
+    width: models[0].sizes.depth,
   });
 
   const [totalPrice, setTotalPrice] = React.useState(0);
@@ -21,14 +22,12 @@ function Calc() {
   }
 
   function checkValuesCalculating(element) {
-    console.log(element);
     return element > 0;
   }
 
   React.useEffect(()=> {
-    console.log(Object.values(options));
+    console.log(options);
     const booleanStatus = Object.values(options).every(checkValuesCalculating);
-    console.log(booleanStatus);
     if(booleanStatus) {
       setTotalPrice(calculation());
     }
@@ -36,6 +35,7 @@ function Calc() {
 
   return (
     <section className="calculate">
+      <p class="models__subtitle">Калькулятор стоимости</p>
       <h2 className="calculate__header">Расчёт стоимости изделия на заказ</h2>
       <div className="calculate__box">
         <div className="calculate__fields">

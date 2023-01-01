@@ -5,7 +5,7 @@ import button__minus from '../../../images/button_minus.png';
 function Input({placeHolder, max, min, label, typeInput, options, setOptions}) {
 
   const [valueInput, setValueInput] = React.useState({
-    userValue: "",
+    userValue: min,
   });
   const [ focused, setFocused ] = React.useState(false);
   const [ disabledLabel, setDisabledLabel ] = React.useState({

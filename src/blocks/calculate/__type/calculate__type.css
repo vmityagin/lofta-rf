@@ -3,4 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  padding: 0;
+  margin: 15px 0 25px;
 }

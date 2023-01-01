@@ -2,7 +2,7 @@ import React from 'react';
 import { materials_tumba } from '../../../utils/models';
 
 function MaterialTumba({options, setOptions}) {
-  const [isSelected, setIsSelected] = React.useState(0);
+  const [isSelected, setIsSelected] = React.useState(materials_tumba[0].id);
 
   function chooseType(type) {
     setIsSelected(type);
