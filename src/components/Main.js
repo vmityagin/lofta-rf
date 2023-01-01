@@ -3,6 +3,7 @@ import Header from './Header';
 import First from './First';
 import Models from './Models';
 import Calc from './Calc/Calc';
+import Oplata from './Oplata';
 import Footer from './Footer';
 
 function Main() {
@@ -13,6 +14,7 @@ function Main() {
         <First />
         <Models />
         <Calc />
+        <Oplata />
       </main>
       <Footer />
     </div>

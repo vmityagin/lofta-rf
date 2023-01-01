@@ -18,7 +18,7 @@ function Calc() {
 
   function calculation() {
     const estimate = options.width/100*options.length/100*options.tableTop+((options.length/100-0.65)+1.72)*(options.width/100-0.02)*options.tumba;
-    return Math.ceil(estimate);
+    return Math.ceil(estimate).toLocaleString();
   }
 
   function checkValuesCalculating(element) {
@@ -30,6 +30,8 @@ function Calc() {
     const booleanStatus = Object.values(options).every(checkValuesCalculating);
     if(booleanStatus) {
       setTotalPrice(calculation());
+    } else {
+      setTotalPrice(0);
     }
   }, [options]);
 

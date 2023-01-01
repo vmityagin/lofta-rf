@@ -1,0 +1,12 @@
+.payment__steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}

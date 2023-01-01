@@ -73,6 +73,13 @@
 @import url('./blocks/number/__button/_disabled/number__button_disabled.css');
 @import url('./blocks/number/__label/number__label.css');
 
+@import url('./blocks/payment/payment.css');
+@import url('./blocks/payment/__steps/payment__steps.css');
+@import url('./blocks/payment/__step/payment__step.css');
+@import url('./blocks/payment/__icon/payment__icon.css');
+@import url('./blocks/payment/__title/payment__title.css');
+@import url('./blocks/payment/__text/payment__text.css');
+
 .splide {
   padding: 0 60px;
 }

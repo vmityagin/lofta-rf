@@ -10,7 +10,8 @@
   line-height: 10px;
   letter-spacing: -0.04em;
 
-  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
 }
 
 .number__input::-webkit-outer-spin-button,
@@ -23,3 +24,20 @@
 .number__input[type=number] {
   -moz-appearance: textfield;
 }
+
+.number__input::placeholder {
+  color: darkgray;
+  font-size: 15px;
+}
+
+.number__input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .number__input::placeholder {
+    color: darkgray;
+    font-size: 10px;
+  }
+}
+
