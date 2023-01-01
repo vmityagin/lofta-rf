@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lofta-rf/static/css/main.e64e12c3.css",
+    "main.css": "/lofta-rf/static/css/main.074bc1c7.css",
     "main.js": "/lofta-rf/static/js/main.92c3daca.js",
     "static/media/first__image.png": "/lofta-rf/static/media/first__image.493f98e32e3c59202402.png",
     "static/media/card__material__ldsp.png": "/lofta-rf/static/media/card__material__ldsp.a19c06a0b32b55f43e97.png",
@@ -65,11 +65,11 @@
     "static/media/nav__hamburger.svg": "/lofta-rf/static/media/nav__hamburger.bf88c47851cf38fd60bc78326ea45706.svg",
     "static/media/info__mobile.svg": "/lofta-rf/static/media/info__mobile.5f275420acd7634be2329f2be7b85a58.svg",
     "index.html": "/lofta-rf/index.html",
-    "main.e64e12c3.css.map": "/lofta-rf/static/css/main.e64e12c3.css.map",
+    "main.074bc1c7.css.map": "/lofta-rf/static/css/main.074bc1c7.css.map",
     "main.92c3daca.js.map": "/lofta-rf/static/js/main.92c3daca.js.map"
   },
   "entrypoints": [
-    "static/css/main.e64e12c3.css",
+    "static/css/main.074bc1c7.css",
     "static/js/main.92c3daca.js"
   ]
 }
