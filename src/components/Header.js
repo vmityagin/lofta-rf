@@ -1,3 +1,5 @@
+import React from 'react';
+
 import header__logo from '../images/header__logo.png';
 import info__mobile from '../images/info__mobile.svg';
 import info__clock from '../images/info__clock.svg';
@@ -8,6 +10,8 @@ import nav__hamburger from '../images/nav__hamburger.svg';
 import {Link} from 'react-router-dom';
 
 function Header() {
+
+  const phone = "tel:+79172134928";
   return (
     <header className="header">
       <div className="header__fl">
@@ -20,7 +24,8 @@ function Header() {
             <ul className="info">
               <li className="info__item">
                 <img src={info__mobile} className="info__icon" alt="иконка телефона" />
-                <p className="info__text" >+7 (917) 213-49-28</p>
+                <a className="info__text" href={phone} target="_blank" rel="noreferrer" >+7 (917) 213-49-28</a>
+                {/* <p className="info__text" ><Link to={phone}>+7 (917) 213-49-28</Link></p> */}
               </li>
               <li className="info__item">
                 <img src={info__clock} className="info__icon" alt="циферблат иконка" />
