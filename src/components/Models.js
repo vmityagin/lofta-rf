@@ -8,7 +8,7 @@ import '@splidejs/react-splide/css/core';
 function Models() {
 
   return (
-    <section className="models">
+    <section className="models" id="models">
       <p className="models__subtitle">Модельный ряд</p>
       <h2 className="models__title">Тумбы</h2>
       <Splide

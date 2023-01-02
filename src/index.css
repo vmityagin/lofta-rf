@@ -7,6 +7,15 @@
 @import url('./blocks/header/__fl/header__fl.css');
 @import url('./blocks/header/__logo/header__logo.css');
 
+@import url('./blocks/sidebar/sidebar.css');
+@import url('./blocks/sidebar/__nav/sidebar__nav.css');
+@import url('./blocks/sidebar/__list/sidebar__list.css');
+@import url('./blocks/sidebar/__footer/sidebar__footer.css');
+@import url('./blocks/sidebar/__info/sidebar__info.css');
+@import url('./blocks/sidebar/__point/sidebar__point.css');
+@import url('./blocks/sidebar/__item/sidebar__item.css');
+@import url('./blocks/sidebar/__text/sidebar__text.css');
+
 @import url('./blocks/info/info.css');
 @import url('./blocks/info/__item/info__item.css');
 @import url('./blocks/info/__link/info__link.css');
@@ -92,6 +101,8 @@
 
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/footer/__text/footer__text.css');
+
+@import url('./blocks/scroll/scroll.css');
    
 .splide {
   padding: 0 60px;

@@ -7,7 +7,7 @@ import icon__delivery from "../images/icon__delivery.svg";
 
 function Oplata() {
   return (
-    <section className="payment">
+    <section className="payment" id="srok">
       <p class="models__subtitle">Формат оплаты</p>
       <h2 className="calculate__header">Как осуществляется оплата и доставка?</h2>
       <ul className="payment__steps">

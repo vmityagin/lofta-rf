@@ -2,7 +2,7 @@ import first__image from '../images/first__image.png';
 
 function First() {
   return (
-    <section className="first">
+    <section className="first" id="first">
       <div className="first__text">
         <h1 className="first__header">Тумба со столешницей из дерева</h1>
         <p className="first__subtitle">

@@ -6,10 +6,17 @@ import info__clock from '../images/info__clock.svg';
 import info__location from '../images/info__location.svg';
 import info__organization from '../images/info__organization.svg';
 import nav__hamburger from '../images/nav__hamburger.svg';
+import header__cross from '../images/header__cross.svg';
 
-import {Link} from 'react-router-dom';
+function Header({ isOpen, isClose, isNavigation }) {
 
-function Header() {
+  const handleClickScroll = (element) => {
+    const box = document.getElementById(element);
+    if (box) {
+      // 👇 Will scroll smoothly to the top of the next section
+      box.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const phone = "tel:+79172134928";
   return (
@@ -17,7 +24,22 @@ function Header() {
       <div className="header__fl">
         <img className="header__logo" src={header__logo} alt="логотип лофта рф"/>
         <div>
-          <img src={nav__hamburger} className="nav__hamburger" alt="иконка мобильного меню" />
+          {
+            isNavigation ?
+            <img
+              onClick={isClose} 
+              src={header__cross} 
+              className="nav__hamburger" 
+              alt="иконка закрытия меню" 
+            />
+            :
+            <img
+              onClick={isOpen} 
+              src={nav__hamburger} 
+              className="nav__hamburger" 
+              alt="иконка мобильного меню" 
+            />
+          }
         </div>
         <div className="header__navigation">
           <div className="header__info">
@@ -25,7 +47,6 @@ function Header() {
               <li className="info__item">
                 <img src={info__mobile} className="info__icon" alt="иконка телефона" />
                 <a className="info__text" href={phone} target="_blank" rel="noreferrer" >+7 (917) 213-49-28</a>
-                {/* <p className="info__text" ><Link to={phone}>+7 (917) 213-49-28</Link></p> */}
               </li>
               <li className="info__item">
                 <img src={info__clock} className="info__icon" alt="циферблат иконка" />
@@ -43,17 +64,17 @@ function Header() {
           </div>
           <nav className="header__nav">
             <ul className="nav">
-              <li className="nav__item">
-                <Link className="nav__link" to="/#">Главная</Link>
+              <li className="nav__item" onClick={() => handleClickScroll('first')}>
+                <p className="nav__link">Главная</p>
               </li>
-              <li className="nav__item">
-                <Link className="nav__link" to="/#">Модельный ряд</Link>
+              <li className="nav__item" onClick={() => handleClickScroll('models')}>
+                <p className="nav__link">Модельный ряд</p>
               </li>
-              <li className="nav__item">
-                <Link className="nav__link" to="/#">Калькулятор</Link>
+              <li className="nav__item" onClick={() => handleClickScroll('calculate')}>
+                <p className="nav__link">Калькулятор</p>
               </li>
-              <li className="nav__item">
-                <Link className="nav__link" to="/#">Сроки</Link>
+              <li className="nav__item" onClick={() => handleClickScroll('srok')}>
+                <p className="nav__link">Сроки</p>
               </li>
             </ul>
           </nav>

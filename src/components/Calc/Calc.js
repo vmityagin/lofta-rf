@@ -36,7 +36,7 @@ function Calc() {
   }, [options]);
 
   return (
-    <section className="calculate">
+    <section className="calculate" id="calculate">
       <p class="models__subtitle">Калькулятор стоимости</p>
       <h2 className="calculate__header">Расчёт стоимости изделия на заказ</h2>
       <div className="calculate__box">
