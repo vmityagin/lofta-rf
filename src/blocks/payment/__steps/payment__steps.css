@@ -1,7 +1,7 @@
 .payment__steps {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 
   flex-wrap: wrap;
 
@@ -9,4 +9,10 @@
 
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .payment__steps {
+    margin: 0;
+  }
 }
