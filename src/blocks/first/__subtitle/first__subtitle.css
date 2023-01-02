@@ -24,5 +24,6 @@
   .first__subtitle {
     text-align: center;
     color: white;
+    padding: 0 15px;
   }
 }
