@@ -10,5 +10,7 @@
   letter-spacing: -0.04em;
   text-decoration: underline;
 
+  max-width: 300px;
+
   text-align: center;
 }

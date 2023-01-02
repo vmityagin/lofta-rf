@@ -92,12 +92,7 @@
 
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/footer/__text/footer__text.css');
-
-* {
-  outline: 1px solid red;
-  }
    
-
 .splide {
   padding: 0 60px;
 }
