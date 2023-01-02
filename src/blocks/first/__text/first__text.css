@@ -1,5 +1,5 @@
 .first__text {
-  max-width: 100%;
+  width: 100%;
 
   margin: 0;
   padding: 0 40px;
@@ -13,10 +13,10 @@
 
 @media screen and (max-width: 568px) {
   .first__text {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 0 20px;
     align-items: center;
   }
 }

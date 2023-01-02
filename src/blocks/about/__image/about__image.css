@@ -1,0 +1,16 @@
+.about__image {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about__image {
+    width: 100%;
+
+    margin: 0 0 20px 0;
+  }
+}

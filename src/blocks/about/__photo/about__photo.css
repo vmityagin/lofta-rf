@@ -1,0 +1,12 @@
+.about__photo {
+  width: 90%;
+  box-shadow: 10px 0px 0px #76b729;
+
+  border-radius: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__photo {
+    max-width: 320px;
+  }
+}

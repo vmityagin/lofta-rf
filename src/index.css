@@ -80,6 +80,24 @@
 @import url('./blocks/payment/__title/payment__title.css');
 @import url('./blocks/payment/__text/payment__text.css');
 
+@import url('./blocks/about/about.css');
+@import url('./blocks/about/__box/about__box.css');
+@import url('./blocks/about/__text/about__text.css');
+@import url('./blocks/about/__name/about__name.css');
+@import url('./blocks/about/__position/about__position.css');
+@import url('./blocks/about/__image/about__image.css');
+@import url('./blocks/about/__photo/about__photo.css');
+@import url('./blocks/about/__title/about__title.css');
+@import url('./blocks/about/__subtitle/about__subtitle.css');
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__text/footer__text.css');
+
+* {
+  outline: 1px solid red;
+  }
+   
+
 .splide {
   padding: 0 60px;
 }
