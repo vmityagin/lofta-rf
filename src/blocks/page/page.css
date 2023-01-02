@@ -9,6 +9,8 @@
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     position: relative;
+
+    position: relative;
   
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
