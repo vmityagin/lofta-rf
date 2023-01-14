@@ -1,0 +1,18 @@
+.photos {
+  background-color: rgba(0,0,0,.9);
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: visibility .5s linear,opacity .5s linear;
+  z-index: 21;
+  visibility: hidden;
+
+  margin: 0;
+  padding: 0;
+}

@@ -26,7 +26,6 @@ function Calc() {
   }
 
   React.useEffect(()=> {
-    console.log(options);
     const booleanStatus = Object.values(options).every(checkValuesCalculating);
     if(booleanStatus) {
       setTotalPrice(calculation());

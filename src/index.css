@@ -103,7 +103,18 @@
 @import url('./blocks/footer/__text/footer__text.css');
 
 @import url('./blocks/scroll/scroll.css');
-   
+
+@import url('./blocks/photos/photos.css');
+@import url('./blocks/photos/_active/photos_active.css');
+@import url('./blocks/photos/__box/photos__box.css');
+@import url('./blocks/photos/__image/photos__image.css');
+@import url('./blocks/photos/__cross/photos__cross.css');
+
+@import url('./blocks/slick/slick.css');
+@import url('./blocks/slick/slick-theme.css');
+
+
+
 .splide {
   padding: 0 60px;
 }

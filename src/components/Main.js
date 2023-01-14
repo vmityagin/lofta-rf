@@ -7,19 +7,30 @@ import Calc from './Calc/Calc';
 import Oplata from './Oplata';
 import About from './About';
 import Footer from './Footer';
+import PopupCards from './PopupCards'
 
 function Main() {
 
   const [isNavigationPopup, setIsNavigationPopup] = React.useState(false);
+  const [isPhotosPopup, setIsPhotosPopup] = React.useState(false);
+  const [isPhotos, setIsPhotos] = React.useState([]);
 
   function handlePopupMenuNavigation() {
     setIsNavigationPopup(true);
+    addScroll();
+  }
+  
+  function addScroll() {
     document.body.classList.add('scroll');
+  }
+
+  function removeScroll() {
+    document.body.classList.remove('scroll');
   }
 
   function closePopup() {
     setIsNavigationPopup(false);
-    document.body.classList.remove('scroll');
+    removeScroll();
   }
 
   return (
@@ -34,12 +45,22 @@ function Main() {
       }
       <main>
         <First />
-        <Models />
+        <Models 
+          addScroll={addScroll}
+          setIsPhotosPopup={setIsPhotosPopup}
+          setIsPhotos={setIsPhotos}
+        />
         <Calc />
         <Oplata />
         <About />
       </main>
       <Footer />
+      <PopupCards 
+        setIsPhotosPopup={setIsPhotosPopup}
+        isPhotosPopup={isPhotosPopup}
+        removeScroll={removeScroll}
+        isPhotos={isPhotos}
+      />
     </div>
   );
 }

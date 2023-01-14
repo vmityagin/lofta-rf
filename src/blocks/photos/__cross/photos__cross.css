@@ -1,0 +1,18 @@
+.photos__cross {
+  position: absolute;
+  top: 2vh;
+  right: 6vw;
+
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 420px) {
+  .photos__cross {
+    top: 10%;
+    width: 30px;
+    height: 30px;
+  }
+  
+}
+

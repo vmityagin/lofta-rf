@@ -5,7 +5,7 @@ import { models } from '../utils/models';
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/core';
 
-function Models() {
+function Models({setIsPhotosPopup, setIsPhotos, addScroll, removeScroll}) {
 
   return (
     <section className="models" id="models">
@@ -40,7 +40,13 @@ function Models() {
           {
             models.map((model) => (
               <SplideSlide key={model.id}>
-                <Model model={model} />
+                <Model 
+                  model={model}
+                  setIsPhotos={setIsPhotos}
+                  setIsPhotosPopup={setIsPhotosPopup}
+                  addScroll={addScroll}
+                  removeScroll={removeScroll}
+                 />
               </SplideSlide >
             ))
           }

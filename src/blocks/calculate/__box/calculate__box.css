@@ -9,5 +9,6 @@
   .calculate__box {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 }

@@ -1,3 +1,9 @@
 .card__materials {
   margin: 0 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
 }

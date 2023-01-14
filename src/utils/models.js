@@ -11,6 +11,16 @@ import image__napol from '../images/image__napol.jpg';
 import image__podves from '../images/image__podves.jpg';
 import image__forma_s from '../images/image__forma_s.jpg';
 
+function importAll(r) {
+  let images = {};
+   r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+   const allPathes = Object.values(images);
+  return allPathes;
+ }
+ const photosTumbaNapol = importAll(require.context('../images/tumba__napol', false, /\.(png|jpe?g|svg)$/));
+ const photosTumbaPodves = importAll(require.context('../images/tumba__podves', false, /\.(png|jpe?g|svg)$/));
+ const photosTumbaSForma = importAll(require.context('../images/tumba__forma_s', false, /\.(png|jpe?g|svg)$/));
+
 const bereza = {
   id: 100,
   wood: 'берёза',
@@ -71,7 +81,8 @@ export const models = [
     name: 'Напольная тумба',
     url: tumba__napol,
     icon: image__napol,
-    price: '12 990',
+    price: 'от 12 990',
+    photos: photosTumbaNapol,
     sizes : {
       width: 50,
       height: 50,
@@ -94,7 +105,8 @@ export const models = [
     name: 'Подвесная тумба',
     url: tumba__podves,
     icon: image__podves,
-    price: '18 990',
+    price: 'от 18 990',
+    photos: photosTumbaPodves,
     sizes : {
       width: 100,
       height: 50,
@@ -114,7 +126,8 @@ export const models = [
     name: 'Тумба с S-столешницей',
     url: tumba__gobraz,
     icon: image__forma_s,
-    price: '25 990',
+    price: 'от 25 990',
+    photos: photosTumbaSForma,
     sizes : {
       width: 100,
       height: 50,

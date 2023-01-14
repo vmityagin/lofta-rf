@@ -94,7 +94,6 @@ function Input({placeHolder, max, min, label, typeInput, options, setOptions}) {
       setDisabledPlus(true);
       hideLabel();
     }
-    console.log(typeInput);
     setOptions({...options, [typeInput]: Number(valueInput.userValue)});
   }, [valueInput.userValue])
   
