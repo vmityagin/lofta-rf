@@ -60,6 +60,7 @@ function Main() {
         isPhotosPopup={isPhotosPopup}
         removeScroll={removeScroll}
         isPhotos={isPhotos}
+        setIsPhotos={setIsPhotos}
       />
     </div>
   );

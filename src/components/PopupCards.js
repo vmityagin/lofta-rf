@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import cross from '../images/header__cross.svg';
 
-function PopupCards({setIsPhotosPopup, isPhotosPopup, removeScroll, isPhotos}) {
+function PopupCards({setIsPhotosPopup, setIsPhotos, isPhotosPopup, removeScroll, isPhotos}) {
 
   const [settings, setSettings] = React.useState({
     dots: true,
@@ -26,6 +26,7 @@ function PopupCards({setIsPhotosPopup, isPhotosPopup, removeScroll, isPhotos}) {
   })
 
   function isClose() {
+    setIsPhotos([...isPhotos.slice(0, isPhotos.length), ...isPhotos.slice(isPhotos.length + 1)]);
     setIsPhotosPopup(false);
     removeScroll();
   }
