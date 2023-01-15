@@ -2,7 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import cross from '../images/header__cross.svg';
 
-function PopupCards({setIsPhotosPopup, setIsPhotos, isPhotosPopup, removeScroll, isPhotos}) {
+function PopupCards({
+  isPhotosPopup,
+  isArrayPhotos,
+  setIsArrayPhotos,
+  setIsPhotosOpenedPopup,
+  removeScroll,
+}) {
 
   const [settings, setSettings] = React.useState({
     dots: true,
@@ -26,12 +32,12 @@ function PopupCards({setIsPhotosPopup, setIsPhotos, isPhotosPopup, removeScroll,
   })
 
   function isClose() {
-    setIsPhotos([...isPhotos.slice(0, isPhotos.length), ...isPhotos.slice(isPhotos.length + 1)]);
-    setIsPhotosPopup(false);
+    setIsArrayPhotos([...isArrayPhotos.slice(0, isArrayPhotos.length), ...isArrayPhotos.slice(isArrayPhotos.length + 1)]);
+    setIsPhotosOpenedPopup(false);
     removeScroll();
   }
 
-  console.log(isPhotos);
+  console.log(isArrayPhotos);
 
   return (
     <section className={`photos ${isPhotosPopup ? 'photos_active' : ''}`}>
@@ -44,8 +50,8 @@ function PopupCards({setIsPhotosPopup, setIsPhotos, isPhotosPopup, removeScroll,
         />
         <Slider {...settings}>
           {
-            isPhotos.map((path, index) => (
-              <div key={Math.random()}>
+            isArrayPhotos.map((path) => (
+              <div key={isArrayPhotos.id}>
                 <img src={path} className="photos__image" />
               </div>
             ))

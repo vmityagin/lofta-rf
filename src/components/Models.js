@@ -4,8 +4,15 @@ import { models } from '../utils/models';
 
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/core';
+import React from 'react';
 
-function Models({setIsPhotosPopup, setIsPhotos, addScroll, removeScroll}) {
+function Models({
+  addScroll, 
+  removeScroll,
+  setIsPhotosPopup,
+  setIsArrayPhotos,
+  isArrayPhotos,
+}) {
 
   return (
     <section className="models" id="models">
@@ -42,10 +49,11 @@ function Models({setIsPhotosPopup, setIsPhotos, addScroll, removeScroll}) {
               <SplideSlide key={model.id}>
                 <Model 
                   model={model}
-                  setIsPhotos={setIsPhotos}
-                  setIsPhotosPopup={setIsPhotosPopup}
                   addScroll={addScroll}
+                  setIsPhotosPopup={setIsPhotosPopup}
                   removeScroll={removeScroll}
+                  isArrayPhotos={isArrayPhotos}
+                  setIsArrayPhotos={setIsArrayPhotos}
                  />
               </SplideSlide >
             ))

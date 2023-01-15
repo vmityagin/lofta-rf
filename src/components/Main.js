@@ -7,13 +7,13 @@ import Calc from './Calc/Calc';
 import Oplata from './Oplata';
 import About from './About';
 import Footer from './Footer';
-import PopupCards from './PopupCards'
+import PopupCards from './PopupCards';
 
 function Main() {
 
   const [isNavigationPopup, setIsNavigationPopup] = React.useState(false);
-  const [isPhotosPopup, setIsPhotosPopup] = React.useState(false);
-  const [isPhotos, setIsPhotos] = React.useState([]);
+  const [isPhotosOpenedPopup, setIsPhotosOpenedPopup] = React.useState(false);
+  const [isArrayPhotos, setIsArrayPhotos] = React.useState([]);
 
   function handlePopupMenuNavigation() {
     setIsNavigationPopup(true);
@@ -33,6 +33,8 @@ function Main() {
     removeScroll();
   }
 
+  console.log(isArrayPhotos);
+
   return (
     <div className="page">
       <Header 
@@ -47,8 +49,10 @@ function Main() {
         <First />
         <Models 
           addScroll={addScroll}
-          setIsPhotosPopup={setIsPhotosPopup}
-          setIsPhotos={setIsPhotos}
+          removeScroll={removeScroll}
+          setIsPhotosPopup={setIsPhotosOpenedPopup}
+          setIsArrayPhotos={setIsArrayPhotos}
+          isArrayPhotos={isArrayPhotos}
         />
         <Calc />
         <Oplata />
@@ -56,11 +60,11 @@ function Main() {
       </main>
       <Footer />
       <PopupCards 
-        setIsPhotosPopup={setIsPhotosPopup}
-        isPhotosPopup={isPhotosPopup}
+        isPhotosPopup={isPhotosOpenedPopup}
+        isArrayPhotos={isArrayPhotos}
+        setIsArrayPhotos={setIsArrayPhotos}
+        setIsPhotosOpenedPopup={setIsPhotosOpenedPopup}
         removeScroll={removeScroll}
-        isPhotos={isPhotos}
-        setIsPhotos={setIsPhotos}
       />
     </div>
   );

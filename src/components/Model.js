@@ -1,11 +1,17 @@
 
 import React from "react";
 
-function Model({ model, setIsPhotosPopup, addScroll, setIsPhotos }) {
+function Model({  
+  model,  
+  addScroll, 
+  setIsPhotosPopup,
+  setIsArrayPhotos,
+  isArrayPhotos,
+}) {
 
   function isOpen() {
-    setIsPhotos(model.photos);
     setIsPhotosPopup(true);
+    setIsArrayPhotos(model.photos);
     addScroll();
   }
 
