@@ -11,8 +11,8 @@ function Model({
 
   function isOpen() {
     setIsPhotosPopup(true);
-    setIsArrayPhotos(model.photos);
     addScroll();
+    setIsArrayPhotos(model.photos);
   }
 
   return (

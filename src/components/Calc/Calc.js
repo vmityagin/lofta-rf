@@ -4,6 +4,7 @@ import MaterialTumba from './components/MaterialTumba';
 import Input from './components/Input';
 import React from 'react';
 import { models } from '../../utils/models';
+import * as Api from '../../utils/ApiTelegram';
 
 function Calc() {
   const [options, setOptions] = React.useState({
@@ -33,6 +34,26 @@ function Calc() {
       setTotalPrice(0);
     }
   }, [options]);
+
+  function handleSubmitCalc(e) {
+    e.preventDefault();
+    let message = String(`<b>Заявка с сайта!</b>%0A`);
+    message += String(`<u>Модель изделия: </u>${options.typeModel}%0A`);
+    message += String(`<u>Длина изделия: </u>${options.length}%0A`);
+    message += String(`<u>Ширина изделия: </u>${options.width}%0A`);
+    message += String(`<b>Стоимость заказа: </b>${totalPrice}`);
+
+    return Api.submitForm(String(message))
+    .then((data) => {
+      if (data) {
+        alert('Успешная отправка формы');
+        return;
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }
 
   return (
     <section className="calculate" id="calculate">
@@ -77,7 +98,7 @@ function Calc() {
           />
         </div>
         <div className="calculate__result">
-          <button className="calculate__button">Оформить заказ</button>
+          <button className="calculate__button" onClick={handleSubmitCalc}>Оформить заказ</button>
           <div className="calculate__total total">
             <h3 className="total__header">Детали заказа</h3>
             <div className="total__stroke">
